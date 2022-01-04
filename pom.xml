@@ -8,6 +8,11 @@
 		<version>2.6.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+  <packaging>pom</packaging>
+  <modules>
+    <module>spring-config-client</module>
+		<module>eureka-server</module>
+	</modules>
 	<groupId>com.teabag</groupId>
 	<artifactId>springcloud-all</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -18,16 +23,7 @@
 		<spring-cloud.version>2021.0.0</spring-cloud.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
